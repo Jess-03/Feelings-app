@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Pathway+Extreme:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
+
+*{
+    font-family: 'Albert Sans', sans-serif;   
+    color: #607D8B;
+}
+
+body{
+    background: linear-gradient(rgb(0 209 178 / 39%), #fffefa);
+    height: 100vh;
+}
+
+.container{
+    height: 700px;
+}
+
+.title, .subtitle, .label{
+    color: #607D8B;
+}
+
+.title.is-5{
+    font-family: 'Pathway Extreme', sans-serif;
+    border: 1px solid #00d1b2;
+    border-radius: 12px;
+}
+
+.box{
+    background-color:#f0ffff9c;
+}
+
+.emotion-list {
+    list-style-type: none;
+}
