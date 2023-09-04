@@ -1,3 +1,21 @@
+// Este código JavaScript se utiliza para activar el menú hamburguesa en dispositivos pequeños
+document.addEventListener('DOMContentLoaded', function () {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+          });
+      });
+  }
+});
+
+
 // Agregar evento click al botón "Enviar" para mostrar el modal
 document.getElementById('mostrar-modal').addEventListener('click', function () {
   var modal = document.getElementById('modal');

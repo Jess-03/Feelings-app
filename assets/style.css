@@ -10,6 +10,16 @@ body{
     height: 100vh;
 }
 
+.navbar{
+    border-radius: 10px;
+    background-color: rgb(255 255 255 / 0%);
+    border: 1px solid #94d1c8;
+}
+
+.navbar-menu{
+    border-radius: 10px;
+}
+
 .container{
     height: 700px;
 }
@@ -20,8 +30,7 @@ body{
 
 .title.is-5{
     font-family: 'Pathway Extreme', sans-serif;
-    border: 1px solid #00d1b2;
-    border-radius: 12px;
+    
 }
 
 .box{
