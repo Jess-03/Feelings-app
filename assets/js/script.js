@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
 // Agregar evento click al botón "Enviar" para mostrar el modal
 document.getElementById('mostrar-modal').addEventListener('click', function () {
   var modal = document.getElementById('modal');
@@ -45,12 +44,14 @@ document.getElementById('mostrar-modal').addEventListener('click', function () {
 
     }),
   })
-    .then(response => response.json())
+    .then(response => {return response.json()})
     .then(response => {
       // Mostrar el emoji resultado en el modal
       var resultadoModal = document.getElementById('resultado-modal');
-      resultadoModal.innerHTML = '<p>Emoji resultado: ' + response.choices[0].content + '</p>';
+      resultadoModal.innerHTML = '<p>Emoji resultado: ' + response.choices[0].message.content + '</p>';
+      //console.log(response);
     })
+    
     .catch(error => console.error('Error:', error));
 });
 
