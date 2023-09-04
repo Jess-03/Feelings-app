@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feelings</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+  <div class="continer pl-5 pt-5 pr-5 pb-4">
+    <div class="box">
+      <!-- Barra de navegación -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <h1 class="title is-5">Feelings</h1>
+          </a>
+          <!-- Este botón se mostrará en dispositivos pequeños para abrir el menú -->
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+          <!-- Esta parte se mostrará en la derecha en dispositivos grandes -->
+          <div class="navbar-end">
+            <a class="navbar-item pag" href="index.html">Inicio</a>
+            <a class="navbar-item pag" href="#">Calendario</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Contenido -->
+      <div class="columns">
+        <!-- Sección 1 bienvenida -->
+        <div class="column is-two-fifths mt-4">
+          <h3 class="title"> ¡Hola, que gusto verte! </h3>
+          <h4 class="subtitle is-4">¿Cómo te sientes hoy?</h4>
+
+        </div>
+
+        <!-- Sección 2 selección estado de ánimo -->
+        <div class="column mt-2">
+          <h4 class="subtitle pt-3">Selecciona el estado de ánimo con el que te identificas: </h4>
+
+          <!-- Emojis -->
+          <div class="columns is-mobile has-text-centered">
+            <div class="column">
+              <img class="emotion-image" src="../assets/img/emoji-feliz.png" alt="Emoji amarillo de una carita feliz">
+              <ul class="emotion-list">
+                <li class="emotion-item is-justify-content-center">
+                  <input type="radio" id="happy" name="emotion" value="feliz">
+                </li>
+              </ul>
+              <p class="text centered">Feliz</p>
+            </div>
+
+            <div class="column">
+              <img class="emotion-image" src="../assets/img/emoji-triste.png" alt="Emoji amarillo de una carita triste">
+              <ul class="emotion-list">
+                <li class="emotion-item is-justify-content-center">
+                  <input type="radio" id="sad" name="emotion" value="triste">
+                </li>
+              </ul>
+              <p class="text centered">Triste</p>
+            </div>
+
+            <div class="column">
+              <img class="emotion-image" src="../assets/img/emoji-neutral.png"
+                alt="Emoji amarillo de una carita con rostro serio">
+              <ul class="emotion-list">
+                <li class="emotion-item is-justify-content-center">
+                  <input type="radio" id="neutral" name="emotion" value="neutral">
+                </li>
+              </ul>
+              <p class="text centered">Neutral</p>
+            </div>
+
+            <div class="column">
+              <img class="emotion-image" src="../assets/img/emoji-triste.png"
+                alt="Emoji amarillo de una carita durmiendo">
+              <ul class="emotion-list">
+                <li class="emotion-item is-justify-content-center">
+                  <input type="radio" id="tired" name="emotion" value="cansado">
+                </li>
+              </ul>
+              <p class="text centered">Cansadx</p>
+            </div>
+          </div>
+
+          <!-- Área para escribir una entrada -->
+          <div class="field">
+            <label class="label">Describe tu día o pensamientos </label>
+            <div class="control">
+              <textarea class="textarea is-primary mt-4" placeholder="Escribe tus pensamientos"
+                id="descripcion"></textarea>
+            </div>
+          </div>
+          <!-- Botón -->
+          <div class="field">
+            <div class="control">
+              <button class="button is-rounded is-primary is-outlined mt-3" type="submit" id="mostrar-modal"> Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box has-background-white" id="resultado-modal">
+          <!-- Aquí se mostrará el emoji resultado -->
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </div>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

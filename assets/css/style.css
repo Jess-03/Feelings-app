@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&display=swap');
+
+* {
+  font-family: 'Albert Sans', sans-serif;
+}
+
+p,
+.title,
+.subtitle,
+.label {
+  color: #216262;
+}
+
+.subtitle.is-3 {
+  font-weight: 600;
+}
+
+.section {
+  background: linear-gradient(rgb(0 209 178 / 39%), #fffefa);
+}
+
+.box {
+  background-color: #ffffff47;
+}
+
+.login{
+  color: #fffefa;
+}
+
+.registro{
+  color: #0ba8a8;
+}

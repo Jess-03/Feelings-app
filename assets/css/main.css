@@ -2,12 +2,11 @@
 
 *{
     font-family: 'Albert Sans', sans-serif;   
-    color: #607D8B;
+    color: #216262;
 }
 
-body{
+body, .container{
     background: linear-gradient(rgb(0 209 178 / 39%), #fffefa);
-    height: 100vh;
 }
 
 .navbar{
@@ -20,12 +19,8 @@ body{
     border-radius: 10px;
 }
 
-.container{
-    height: 700px;
-}
-
 .title, .subtitle, .label{
-    color: #607D8B;
+    color: #478383;
 }
 
 .title.is-5{
@@ -34,9 +29,15 @@ body{
 }
 
 .box{
-    background-color:#f0ffff9c;
+    background-color: #ffffff47;
+    border: 1px solid rgb(0 0 0 / 9%);
 }
 
 .emotion-list {
     list-style-type: none;
+}
+
+a.navbar-item.pag:hover{
+    background-color: #a4dad2d4;
+    color: #f1ede3;
 }
