@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,17 +20,18 @@
             <div class="column is-two-fifths nube">
               <h3 class="title"> ¡Hola, que gusto verte! </h3>
               <h4 class="subtitle is-4">¿Cómo te sientes hoy?</h4>
-              
+
             </div>
-  
+
             <!-- Sección 2 selección estado de ánimo -->
             <div class="column">
               <h4 class="subtitle pt-3">Selecciona el estado de ánimo con el que te identificas: </h4>
-  
+
               <!-- Emojis -->
               <div class="columns is-mobile has-text-centered">
                 <div class="column">
-                  <img class="emotion-image" src="./assets/img/emoji-feliz.png" alt="Emoji amarillo de una carita feliz">
+                  <img class="emotion-image" src="./assets/img/emoji-feliz.png"
+                    alt="Emoji amarillo de una carita feliz">
                   <ul class="emotion-list">
                     <li class="emotion-item is-justify-content-center">
                       <input type="radio" id="happy" name="emotion" value="feliz">
@@ -39,7 +41,8 @@
                 </div>
 
                 <div class="column">
-                  <img class="emotion-image" src="./assets/img/emoji-triste.png" alt="Emoji amarillo de una carita triste">
+                  <img class="emotion-image" src="./assets/img/emoji-triste.png"
+                    alt="Emoji amarillo de una carita triste">
                   <ul class="emotion-list">
                     <li class="emotion-item is-justify-content-center">
                       <input type="radio" id="sad" name="emotion" value="triste">
@@ -47,9 +50,10 @@
                   </ul>
                   <p class="text centered">Triste</p>
                 </div>
-                  
+
                 <div class="column">
-                  <img class="emotion-image" src="./assets/img/emoji-neutral.png" alt="Emoji amarillo de una carita con rostro serio">
+                  <img class="emotion-image" src="./assets/img/emoji-neutral.png"
+                    alt="Emoji amarillo de una carita con rostro serio">
                   <ul class="emotion-list">
                     <li class="emotion-item is-justify-content-center">
                       <input type="radio" id="neutral" name="emotion" value="neutral">
@@ -59,7 +63,8 @@
                 </div>
 
                 <div class="column">
-                  <img class="emotion-image" src="./assets/img/emoji-cansado.png" alt="Emoji amarillo de una carita durmiendo">
+                  <img class="emotion-image is-64x64" src="./assets/img/emoji-cansado.png"
+                    alt="Emoji amarillo de una carita durmiendo">
                   <ul class="emotion-list">
                     <li class="emotion-item is-justify-content-center">
                       <input type="radio" id="tired" name="emotion" value="cansado">
@@ -68,25 +73,39 @@
                   <p class="text centered">Cansadx</p>
                 </div>
               </div>
-  
+
               <!-- Área para escribir una entrada -->
               <div class="field">
                 <label class="label">Describe tu día o pensamientos </label>
                 <div class="control">
-                  <textarea class="textarea is-primary mt-4" placeholder="Escribe tus pensamientos"></textarea>
+                  <textarea class="textarea is-primary mt-4" placeholder="Escribe tus pensamientos" id="descripcion"></textarea>
                 </div>
               </div>
-                <!-- Botón -->      
+              <!-- Botón -->
               <div class="field">
                 <div class="control">
-                    <button class="button is-primary is-outlined mt-3" type="submit" id="mostrar-modal"> Enviar</button>
+                  <button class="button is-primary is-outlined mt-3" type="submit" id="mostrar-modal"> Enviar</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>  
 
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+          <div class="box has-background-white" id="resultado-modal">
+            <!-- Aquí se mostrará el emoji resultado -->
+          </div>
+      </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+  </div>
+  <script src="./assets/script.js"></script>
 </body>
 </html>
