@@ -1,0 +1,30 @@
+p,
+.title,
+.label,
+.checkbox {
+  color: #216262;
+}
+
+a {
+  color: #0ba8a8;
+}
+
+.section {
+  background: linear-gradient(rgb(0 209 178 / 39%), #fffefa);
+}
+
+.box{
+  background-color: #ffffff47;
+}
+
+.image img {
+  width: 90px;
+}
+
+span{
+  font-weight: 600;
+}
+
+.policy p{
+  color: #4a4a4a;
+}

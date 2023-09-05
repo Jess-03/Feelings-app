@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/registro.css">
+</head>
+
+<body>
+  <section class="section">
+    <div class="box">
+      <div class="columns is-centered ">
+        <div class="column">
+          <div class="is-flex is-justify-content-center">
+            <figure class="image is-flex">
+              <img class="registro-img" src="../assets/img/cerebro.png" alt="cabeza de perfil con un corazón al centro">
+            </figure>
+          </div>
+          </figure>
+          <div class="columns is-centered">
+            <div class="column is-one-third">     
+              <h1 class="title is-4 has-text-centered">Feelings App</h1>
+              <!-- Los datos no son almacenados -->
+              <form>
+                <div class="field">
+                  <label class="label">Nombre</label>
+                  <div class="control has-icons-left">
+                    <input class="input is-primary" type="text" placeholder="Nombre completo" required>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Correo electrónico</label>
+                  <div class="control has-icons-left">
+                    <input class="input is-primary" type="email" placeholder="correo@example.com" required>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Contraseña</label>
+                  <div class="control has-icons-left">
+                    <input class="input is-primary" type="password" placeholder="Contraseña"  maxlength="8" required>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input type="checkbox" required>
+                      <a id="open-policy-modal">Acepto la política de privacidad</a>
+                    </label>
+                  </div>
+                </div>               
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-primary"> Registrarse</button>
+                  </div>
+                </div>
+              </form>
+              <hr>
+              <p class="has-text-centered">¿Ya tienes una cuenta? 
+                <a href="../index.html">Iniciar sesión</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal. Muestra la política de privacidad -->
+    <div class="modal" id="policy-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Política de Privacidad</p>
+          <button class="delete" id="close-modal-button" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Contenido de la política de privacidad aquí -->
+          <div class="content policy">
+            <h5 class="subtitle is-6">Última actualización: 04/09/2023 </h5>
+            <p> Bienvenido a <span>Feelings App</span>, la aplicación que te ayuda a registrar y comprender tus emociones. Valoramos y respetamos tu privacidad, y estamos comprometidos en proteger tus datos personales. A continuación encontrarás cómo recopilamos, utilizamos, almacenamos y protegemos la información que proporcionas al utilizar nuestra aplicación.</p>
+            <br>
+            <section>
+              <h4 class="subtitle is-5">Información que Recopilamos</h4>
+              <p>Cuando utilizas <span>Feelings App</span>, podemos recopilar la siguiente información:</p>
+              <ul>
+                <li><span>Datos de registro</span>: esto incluye tu nombre, dirección de correo electrónico y contraseña.
+                </li>
+                <li><span>Datos de emoción</span>: recopilamos información sobre tus emociones, como tus estados de ánimo, sentimientos y pensamientos, que ingreses en la aplicación.</li>
+                <li><span>Datos de uso</span>: registraremos información sobre cómo utilizas la aplicación, como las funciones que utilizas y la frecuencia con la que lo haces.</li>
+              </ul>
+            </section>
+            <br>
+            <section>
+              <h4 class="subtitle is-5">¿Cómo utilizamos tu información?</h4>
+              <p>Utilizamos la información recopilada para los siguientes propósitos:</p>
+              <ul>
+                <li><span>Mejora de la experiencia del usuario</span>: utilizamos tus datos para mejorar la funcionalidad y la calidad de nuestra aplicación y para personalizar tu experiencia.</li>
+                <li><span>Análisis y Estadísticas</span>: analizamos los datos para comprender mejor cómo se utilizan nuestras características y para obtener información sobre las tendencias de uso.</li>
+                <li><span>Comunicación y soporte</span>: podemos utilizar tu dirección de correo electrónico para responder a tus preguntas, proporcionar asistencia técnica y enviar comunicados importantes relacionadas con la aplicación.</li>
+                <li><span>Seguridad</span>: tomamos medidas para proteger tus datos personales y garantizar la seguridad de la aplicación.</li>
+              </ul>
+            </section>
+            <br>
+            <section>
+              <h4 class="subtitle is-5">Almacenamiento y protección de datos</h4>
+              <p>Utilizamos la información recopilada para los siguientes propósitos:</p>
+              <ul>
+                <li>Los datos que recopilamos se almacenan de forma segura en servidores protegidos con medidas de seguridad técnicas y administrativas.</li>
+                <li>Implementamos medidas de seguridad para proteger tus datos contra accesos no autorizados, pérdida, uso indebido o divulgación.</li>
+                <li>No compartiremos tus datos personales con terceros sin tu consentimiento, a menos que estemos legalmente obligados a hacerlo.</li>
+              </ul>
+            </section>
+            <br>
+            <section>
+              <h4 class="subtitle is-5">Cambios en la Política de Privacidad</h4>
+              <p>Esta Política de Privacidad puede actualizarse periódicamente para reflejar cambios en nuestras prácticas de recopilación y uso de datos. Cualquier modificación se publicará en el apartado correspondiente con una fecha de actualización.</p>
+            </section>
+            <br>
+            <section>
+              <h4 class="subtitle is-5">Contacto</h4>
+              <p>Si tienes preguntas o preocupaciones sobre nuestra Política de Privacidad o sobre tus datos personales, no dudes en contactarnos en <span>feelings_app@contact.com</span></p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Script para activar el modal -->
+  <script src="../assets/js/registro.js"></script>
+</body>
+</html>
