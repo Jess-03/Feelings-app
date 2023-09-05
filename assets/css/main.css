@@ -37,6 +37,10 @@ body, .container{
     list-style-type: none;
 }
 
+.emotion-img{
+    height: 64px;
+}
+
 a.navbar-item.pag:hover{
     background-color: #a4dad2d4;
     color: #f1ede3;

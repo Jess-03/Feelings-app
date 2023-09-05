@@ -36,7 +36,7 @@ document.getElementById('mostrar-modal').addEventListener('click', function () {
       "messages": [
         {
           "role": "user",
-          "content": `Analiza el siguiente texto y responde con un emoji: "${descripcion}"`
+          "content": `Analiza el siguiente texto y responde con un emoji feliz, triste, cansado o neutral: "${descripcion}"`
         }
       ],
       "max_tokens": 10,
@@ -48,7 +48,7 @@ document.getElementById('mostrar-modal').addEventListener('click', function () {
     .then(response => {
       // Mostrar el emoji resultado en el modal
       var resultadoModal = document.getElementById('resultado-modal');
-      resultadoModal.innerHTML = '<p>Emoji resultado: ' + response.choices[0].message.content + '</p>';
+      resultadoModal.innerHTML = '<h3>Hoy te sientes: ' + response.choices[0].message.content + '</h3>';
       //console.log(response);
     })
     

@@ -15,7 +15,10 @@
       <!-- Barra de navegación -->
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="#">
+          <figure class="image is-48x48">
+            <img src="../assets/img/cerebro.png" alt="cabeza de perfil con un corazón al centro">
+          </figure>
+          <a class="navbar-item" href="main.html">
             <h1 class="title is-5">Feelings</h1>
           </a>
           <!-- Este botón se mostrará en dispositivos pequeños para abrir el menú -->
@@ -30,7 +33,7 @@
         <div id="navbarMenu" class="navbar-menu">
           <!-- Esta parte se mostrará en la derecha en dispositivos grandes -->
           <div class="navbar-end">
-            <a class="navbar-item pag" href="index.html">Inicio</a>
+            <a class="navbar-item pag" href="main.html">Inicio</a>
             <a class="navbar-item pag" href="#">Calendario</a>
           </div>
         </div>
@@ -42,55 +45,72 @@
         <div class="column is-two-fifths mt-4">
           <h3 class="title"> ¡Hola, que gusto verte! </h3>
           <h4 class="subtitle is-4">¿Cómo te sientes hoy?</h4>
-
         </div>
 
         <!-- Sección 2 selección estado de ánimo -->
         <div class="column mt-2">
           <h4 class="subtitle pt-3">Selecciona el estado de ánimo con el que te identificas: </h4>
 
-          <!-- Emojis -->
-          <div class="columns is-mobile has-text-centered">
+          <!-- Emojis  has-text-centered-->
+          <div class="columns is-mobile has-text-centered ">
             <div class="column">
-              <img class="emotion-image" src="../assets/img/emoji-feliz.png" alt="Emoji amarillo de una carita feliz">
-              <ul class="emotion-list">
-                <li class="emotion-item is-justify-content-center">
+              <div class="is-flex is-justify-content-center">
+                <figure class="image is-64x64">
+                  <img class="emotion-image" src="../assets/img/emoji-feliz.png" alt="Emoji amarillo de una carita feliz">
+                </figure>
+              </div>
+
+              <ul class="emotion-list ">
+                <li class="emotion-item ">
                   <input type="radio" id="happy" name="emotion" value="feliz">
                 </li>
               </ul>
-              <p class="text centered">Feliz</p>
+              <p>Feliz</p>
             </div>
 
             <div class="column">
-              <img class="emotion-image" src="../assets/img/emoji-triste.png" alt="Emoji amarillo de una carita triste">
+              <div class="is-flex is-justify-content-center">
+                <figure class="image is-64x64">
+                <img class="emotion-image" src="../assets/img/emoji-triste.png" alt="Emoji amarillo de una carita triste">
+              </figure>
+              </div>
+              
               <ul class="emotion-list">
                 <li class="emotion-item is-justify-content-center">
                   <input type="radio" id="sad" name="emotion" value="triste">
                 </li>
               </ul>
-              <p class="text centered">Triste</p>
+              <p>Triste</p>
             </div>
 
             <div class="column">
-              <img class="emotion-image" src="../assets/img/emoji-neutral.png"
-                alt="Emoji amarillo de una carita con rostro serio">
+              <div class="is-flex is-justify-content-center">
+                <figure class="image is-64x64">
+                  <img class="emotion-image" src="../assets/img/emoji-neutral.png"
+                  alt="Emoji amarillo de una carita con rostro serio">
+                </figure>
+              </div>
+
               <ul class="emotion-list">
                 <li class="emotion-item is-justify-content-center">
                   <input type="radio" id="neutral" name="emotion" value="neutral">
                 </li>
               </ul>
-              <p class="text centered">Neutral</p>
+              <p>Neutral</p>
             </div>
 
             <div class="column">
-              <img class="emotion-image" src="../assets/img/emoji-triste.png"
+              <div class="is-flex is-justify-content-center">
+                <img class="emotion-image" src="../assets/img/emoji-cansado.png"
                 alt="Emoji amarillo de una carita durmiendo">
+              </div>
+              
               <ul class="emotion-list">
                 <li class="emotion-item is-justify-content-center">
                   <input type="radio" id="tired" name="emotion" value="cansado">
                 </li>
               </ul>
-              <p class="text centered">Cansadx</p>
+              <p>Cansadx</p>
             </div>
           </div>
 
@@ -110,14 +130,14 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- Modal -->
     <div class="modal" id="modal">
       <div class="modal-background"></div>
-      <div class="modal-content">
-        <div class="box has-background-white" id="resultado-modal">
+      <div class="modal-content has-text-centered">
+        <div class="box content has-background-primary-light" id="resultado-modal">
+          <h1>Analizando...</h1>
           <!-- Aquí se mostrará el emoji resultado -->
         </div>
       </div>
